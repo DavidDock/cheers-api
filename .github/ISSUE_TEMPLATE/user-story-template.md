@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-Epic:
+Epic: <epic>
 
-User Story:
+**User Story**
 
-Acceptance Criteria:
+**Acceptance Criteria**
 
-Tasks:
+**Tasks*
