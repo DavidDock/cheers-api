@@ -29,9 +29,13 @@
 
 ### User Stories
 
+![User-Stories](/documentation/cheers-api-user-stories.png)
+
 ## Database Structure
 
 ### Database Diagram
+
+![Model-Diagram](/documentation/cheers-database-diagram.png)
 
 ### API Endpoints
 
