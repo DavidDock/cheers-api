@@ -13,4 +13,4 @@ Epic: <epic>
 
 **Acceptance Criteria**
 
-**Tasks*
+**Tasks**
