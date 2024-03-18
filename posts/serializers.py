@@ -1,15 +1,21 @@
 from rest_framework import serializers
 from posts.models import Post
+from stars.models import Star
+from cheers.models import Cheer
 
 
 class PostSerializer(serializers.ModelSerializer):
     """
-    Post serializer, validating image size and returning all fields
+    Post serializer
+    Methods to get is_owner, star_id and like id and to validate image
+    Returns own fields, profile_image profile_id, star_id and cheer_id
     """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     profile_image = serializers.ReadOnlyField(source='owner.profile.image.url')
+    star_id = serializers.SerializerMethodField()
+    cheer_id = serializers.SerializerMethodField()
 
     def get_is_owner(self, obj):
         request = self.context['request']
@@ -28,10 +34,29 @@ class PostSerializer(serializers.ModelSerializer):
             )
         return value
 
+    def get_star_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            star = Star.objects.filter(
+                owner=user, post=obj
+            ).first()
+            return star.id if star else None
+        return None
+
+    def get_cheer_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            cheer = Cheer.objects.filter(
+                owner=user, post=obj
+            ).first()
+            return cheer.id if cheer else None
+        return None  
+
     class Meta:
         model = Post
         fields = [
             'id', 'owner', 'is_owner', 'profile_id',
             'profile_image', 'created_at', 'updated_at',
-            'title', 'type', 'content', 'image', 'score'
+            'title', 'type', 'content', 'image', 'score',
+            'star_id','cheer_id',
         ]
