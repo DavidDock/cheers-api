@@ -14,6 +14,7 @@ Cheers To Beers is a social media platform where users can show thier love of di
 * [Technologies Used](#Technologies-Used)
 * [Testing](#Testing)
     * [Validators](#Validators)
+    * [User Story Testing](#User-Story-Testing)
     * [Manual Testing](#Manual-Testing)
     * [Bugs](#Bugs)
 * [Deployment](#Deployment)
@@ -149,6 +150,14 @@ The project's Kanban board can be found [Here](https://github.com/users/DavidDoc
 ## Testing
 
 ### Validators
+
+### User Story Testing
+
+#### (#1)  
+
+##### Acceptance Criteria
+
+##### Results  
 
 ### Manual Testing
 
