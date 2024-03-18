@@ -17,14 +17,7 @@ class Post(models.Model):
     image = models.ImageField(
         upload_to='images/', default='../default_post_lawdck', blank=True
     )
-    rating = (
-        (1, 1),
-        (2, 2),
-        (3, 3),
-        (4, 4),
-        (5, 5)
-    )
-    score = models.IntegerField(choices=rating, default=5, validators=[
+    score = models.IntegerField(blank=True, null=True, validators=[
                                 MinValueValidator(1), MaxValueValidator(5)])
 
     class Meta:
