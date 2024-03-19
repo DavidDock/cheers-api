@@ -26,4 +26,5 @@ urlpatterns = [
     path('', include('cheers.urls')),
     path('', include('followers.urls')),
     path('', include('about.urls')),
+    path('', include('contact.urls')),
 ]
