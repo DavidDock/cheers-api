@@ -149,16 +149,47 @@ Comments can be filtered by what post they are on.
 
 ## Future Implementations
 
+4 Could Have issues are remaining for this project, they covered the following functionality for future implementation:
+* About edit - Allows admin to edit the about message from the front-end.
+* Contact List - Allows admin to view and delete all contact messages from the front-end.
+* Create Review - Allows users to create and delete a review for other users posts/drinks. This will create an average user rating which can be seen in the post detail. 
+
+Further future implentations:
 * For each cheers/star/comment give post owner a notification.
 * Show post owner a list of users who gave cheer/star.
 
 ## Technologies Used
 
-## Python Packages
+### Languages
+* Python
+
+### Frameworks
+* Django - Framework to build the app.
+* Django REST framework - Toolkit for building the API
+
+### Libaries and Programes Used
+* Pillow - To process the image.
+* Cloudinary - Used to store and serve images.
+* Django filter - Used to filter API results.
+* Git - Used for version control.
+* GitHub - Used to store the repository and GitHub projects for the Kanban board.
+* GitPod - IDE used to develop the site.
+* ElephantSQL - Used for the database.
+* lucid - To create model diagrams.
+* Heroku - Used for hosting the site.
 
 ## Testing
 
+Testing was done throughout development using the local sqlite database.  
+Further testing was completed as part of the front-end development by testing the deployed API and database.
+
 ### Validators
+[CI Python Linter](https://pep8ci.herokuapp.com/) was used to test the python code.  
+
+The validation was completed on all python files written for this site.  
+Settings.py contains important data which is longer than 79 lines and can not be ajusted.  
+After removing some whitespace and adding blank lines all files passed validation.  
+
 
 ### User Story Testing
 
@@ -470,3 +501,6 @@ A contact can successfully be created by a user in the contactcreate view, /cont
 ### Clone Repository
 
 ## Credits
+
+### Learning
+The code used for this project was taught to me by code insitute. The Code Insitutes project run throughs 'Django Rest Framework' and 'Moments' helped me greatly with the development of my project.
