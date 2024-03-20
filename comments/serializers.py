@@ -39,4 +39,4 @@ class CommentDetailSerializer(CommentSerializer):
     Serializer for the Comment model used in Detail view
     Post is a read only field
     """
-    post = serializers.ReadOnlyField(source='post.id')       
+    post = serializers.ReadOnlyField(source='post.id')

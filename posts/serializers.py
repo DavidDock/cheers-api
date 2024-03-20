@@ -53,7 +53,7 @@ class PostSerializer(serializers.ModelSerializer):
                 owner=user, post=obj
             ).first()
             return cheer.id if cheer else None
-        return None  
+        return None
 
     class Meta:
         model = Post
@@ -61,6 +61,6 @@ class PostSerializer(serializers.ModelSerializer):
             'id', 'owner', 'is_owner', 'profile_id',
             'profile_image', 'created_at', 'updated_at',
             'title', 'type', 'content', 'image', 'score',
-            'star_id','cheer_id', 'stars_count', 'cheers_count',
+            'star_id', 'cheer_id', 'stars_count', 'cheers_count',
             'comments_count'
         ]

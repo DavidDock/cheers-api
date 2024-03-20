@@ -12,7 +12,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=200)
-    type = models.CharField(max_length=200, blank=True) 
+    type = models.CharField(max_length=200, blank=True)
     content = models.TextField(max_length=550, blank=True)
     image = models.ImageField(
         upload_to='images/', default='../default_post_lawdck', blank=True

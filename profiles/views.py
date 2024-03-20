@@ -5,6 +5,7 @@ from cheers_api.permissions import IsOwnerOrReadOnly
 from .models import Profile
 from .serializers import ProfileSerializer
 
+
 class ProfileList(generics.ListAPIView):
     """
     List all profiles.
