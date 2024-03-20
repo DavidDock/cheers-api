@@ -491,6 +491,7 @@ As a developer allow user to create contact through api
 A contact can successfully be created by a user in the contactcreate view, /contact url, and be seen in the admin panel.
 
 ### Manual Testing
+![Manual-Testing](/documentation/manual-testing-cheers-api.png)
 
 ### Bugs
 
