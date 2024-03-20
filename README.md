@@ -176,6 +176,8 @@ Further future implentations:
 * GitPod - IDE used to develop the site.
 * ElephantSQL - Used for the database.
 * lucid - To create model diagrams.
+* Google Sheets - To create uer story and testing spreadsheet.
+* Tiny PNG - Used to re-size image file.
 * Heroku - Used for hosting the site.
 
 ## Testing
