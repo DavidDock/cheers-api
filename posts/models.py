@@ -15,7 +15,7 @@ class Post(models.Model):
     type = models.CharField(max_length=200, blank=True)
     content = models.TextField(max_length=550, blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../default_post_lawdck', blank=True
+        upload_to='images/', default='../beer-upload_vnqyn3', blank=True
     )
     score = models.IntegerField(blank=True, null=True, validators=[
                                 MinValueValidator(1), MaxValueValidator(5)])
