@@ -1,6 +1,7 @@
 # Cheer To Beers API
 
-Cheers To Beers is a social media platform where users can show thier love of different beers and share a drink with one another even if they aren't in the same room. It offers the chance to find friends, interact and review their own drinks.
+Cheers To Beers is a social media platform where users can show thier love of different beers and share a drink with one another even if they aren't in the same room. It offers the chance to find friends, interact and review their own drinks.  
+The deployed site can be found [Cheers-API](https://cheers-to-beers-a370da914fab.herokuapp.com/)
 
 
 ## Contents
@@ -167,10 +168,16 @@ Further future implentations:
 * Django - Framework to build the app.
 * Django REST framework - Toolkit for building the API
 
-### Libaries and Programes Used
+### Libaries, Python Packages and Programes Used
 * Pillow - To process the image.
 * Cloudinary - Used to store and serve images.
 * Django filter - Used to filter API results.
+* dj rest auth - Used with auth system.
+* djangorestframework simple jwt - Used to create access tokens for authentication.
+* dj database url - Used for the DATABASE_URL connection settings.
+* Psycopg2 - Allows deployed application to perform CRUD on the db.
+* Gunicorn - Used for deployment of WSGI applications.
+* django cors headers - Used to allow cross origin rescource sharing.
 * Git - Used for version control.
 * GitHub - Used to store the repository and GitHub projects for the Kanban board.
 * GitPod - IDE used to develop the site.
@@ -498,10 +505,42 @@ A contact can successfully be created by a user in the contactcreate view, /cont
 ## Deployment
 
 ### Heroku Deployment
+This site was deployed using Heroku via GitHub and developed using gitpod. The following steps were followed to deploy the site:
+
+- Make sure the development environment has:  
+
+  - All the correct requirements are in requirements.txt
+  - The settings.py is set up to use DATABASE_URL(sqlite local db when in development and ElephantSQL otherwise), CLOUDINARY_URL  (Used for hosting images uploaded) and SECRET_KEY (Django secret key), all pointing to the env.py where the environment variables are stored or will be found in Heroku convig vars when deployed
+  - An env.py file storing sensitive keys for Django (Secret_key), image storage (Cloudinary_url) and a DEV variable. 
+  - The static configuration is correct (In this project Cloudinary used for media and Whitenoise used to serve static)
+  - Make sure Allowed_hosts = 'localhost' for the development and a 'ALLOWED_HOST' variable for the deployed site.
+  - A Procfile added with web: gunicorn project_name(cheers_api).wsgi
+  - Debug set to only true in development mode
+  - All migrations are made to external db.
+  - All changes commited and pushed to GitHub where the repository is stored  
+
+- Log in to Heroku and create App with unique name
+- Add following convig Vars to new App:
+  - DATABASE_URL with database value in env.py (Copied from the relevant ElephantSQL database instance)
+  - SECRET_KEY with django secret key value in env.py (Create this yourself)
+  - CLOUDINARY_URL with cloudinary value in env.py (Copied from API environment variable in Cloudinary account)
+  - ALLOWED_HOST with Heroku url
+- Click on deploy and choose GitHub and link to the repository [Cheers-API-GitHub-Repository](https://github.com/DavidDock/cheers-api)
+- Click on deply branch
+- Open App
+
+Visit the deployed API: [Cheers-API](https://cheers-to-beers-a370da914fab.herokuapp.com/)  
 
 ### Fork Repository
+- Go to the [Cheers-API-GitHub-Repository](https://github.com/DavidDock/cheers-api)
+- Click "Fork" which can be found in the top right corner
 
 ### Clone Repository
+- Go to the [Cheers-API-GitHub-Repository](https://github.com/DavidDock/cheers-api)
+- Under the repository click on "go to" then under the "local" tab copy the HTTPS clone URL
+- In your local development environment go to the terminal
+- Change the current working directory to the location you want the cloned directory to be made
+- Type "git clone" and then paste the clone URL and press enter
 
 ## Credits
 
