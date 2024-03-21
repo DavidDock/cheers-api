@@ -59,7 +59,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['8000-daviddock-cheersapi-0huxbsysn9u.ws-eu110.gitpod.io', 'localhost', 'https://cheers-to-beers-a370da914fab.herokuapp.com/']
+ALLOWED_HOSTS = ['8000-daviddock-cheersapi-0huxbsysn9u.ws-eu110.gitpod.io', 'localhost', 'cheers-to-beers-a370da914fab.herokuapp.com']
 
 
 # Application definition
