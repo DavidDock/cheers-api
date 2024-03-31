@@ -1,5 +1,4 @@
 from django.db import models
-from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth.models import User
 
 
@@ -17,8 +16,7 @@ class Post(models.Model):
     image = models.ImageField(
         upload_to='images/', default='../beer-upload_vnqyn3', blank=True
     )
-    score = models.IntegerField(blank=True, null=True, validators=[
-                                MinValueValidator(1), MaxValueValidator(5)])
+    score = models.IntegerField(default=0)
 
     class Meta:
         ordering = ['-created_at']
