@@ -1,7 +1,11 @@
 # Cheer To Beers API
 
 Cheers To Beers is a social media platform where users can show thier love of different beers and share a drink with one another even if they aren't in the same room. It offers the chance to find friends, interact and review their own drinks.  
-The deployed site can be found [Cheers-API](https://cheers-to-beers-api-5a858b4697bd.herokuapp.com/)
+The deployed site can be found here - [Cheers-API](https://cheers-to-beers-api-5a858b4697bd.herokuapp.com/)  
+
+This API was created in conjuction with the frontend project which can be found here:  
+[Cheers-To-Beers-Live-Site](https://cheers-to-beers-4e5512c864fe.herokuapp.com/)  
+[Cheers-To-Beers-GitHub-Repository](https://github.com/DavidDock/cheers-to-beers)
 
 
 ## Contents
