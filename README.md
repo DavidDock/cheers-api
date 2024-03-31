@@ -5,24 +5,24 @@ The deployed site can be found [Cheers-API](https://cheers-to-beers-api-5a858b46
 
 
 ## Contents
-* [Development Goals](#Development-Goals)
-* [Agile Planning](#Agile-Planning)
-    * [User Stories](#User-Stories)
-* [Database Structure](#Database-Structure)
-    * [Database Diagram](#Database-Diagram)
-    * [API End Points](#API-Endpoints)
-* [Future Implementations](#Future-Implementations)
-* [Technologies Used](#Technologies-Used)
-* [Testing](#Testing)
-    * [Validators](#Validators)
-    * [User Story Testing](#User-Story-Testing)
-    * [Manual Testing](#Manual-Testing)
-    * [Bugs](#Bugs)
-* [Deployment](#Deployment)
-    * [Heroku Deployment](#Heroku-Deployment)
-    * [Fork Repository](#Fork-Repository)
-    * [Clone Repository](#Clone-Repository)
-* [Credits](#Credits)
+- [Development Goals](#Development-Goals)
+- [Agile Planning](#Agile-Planning)
+    - [User Stories](#User-Stories)
+- [Database Structure](#Database-Structure)
+    - [Database Diagram](#Database-Diagram)
+    - [API End Points](#API-Endpoints)
+- [Future Implementations](#Future-Implementations)
+- [Technologies Used](#Technologies-Used)
+- [Testing](#Testing)
+    - [Validators](#Validators)
+    - [User Story Testing](#User-Story-Testing)
+    - [Manual Testing](#Manual-Testing)
+    - [Bugs](#Bugs)
+- [Deployment](#Deployment)
+    - [Heroku Deployment](#Heroku-Deployment)
+    - [Fork Repository](#Fork-Repository)
+    - [Clone Repository](#Clone-Repository)
+- [Credits](#Credits)
 
 ## Development Goals
 
@@ -81,8 +81,7 @@ They can be ordered by amount of posts, following, followed by or most recently 
 * DELETE - Delete a post
 
 Posts can be searched by their title, type or author.  
-They can be filtered by who the user is following, what posts they have stared or their own posts.  
-The posts can be ordered by amount of comments, stars, cheers or most recently stared.
+They can be filtered by who the user is following, what posts they have stared or their own posts.
 
 #### Stars
 
@@ -156,6 +155,7 @@ Comments can be filtered by what post they are on.
 * Create Review - Allows users to create and delete a review for other users posts/drinks. This will create an average user rating which can be seen in the post detail. 
 
 Further future implentations:
+* For the profile and posts model it would be better to resize the images upon upload to speed up frontend performance.
 * For each cheers/star/comment give post owner a notification.
 * Show post owner a list of users who gave cheer/star.
 
@@ -525,6 +525,8 @@ This site was deployed using Heroku via GitHub and developed using gitpod. The f
   - SECRET_KEY with django secret key value in env.py (Create this yourself)
   - CLOUDINARY_URL with cloudinary value in env.py (Copied from API environment variable in Cloudinary account)
   - ALLOWED_HOST with Heroku url
+  - CLIENT_ORIGIN with the deployed frontend url
+  - CLIENT_ORIGIN_DEV with the development url
 - Click on deploy and choose GitHub and link to the repository [Cheers-API-GitHub-Repository](https://github.com/DavidDock/cheers-api)
 - Click on deply branch
 - Open App
