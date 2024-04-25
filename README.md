@@ -1,9 +1,9 @@
 # Cheer To Beers API
 
-Cheers To Beers is a social media platform where users can show thier love of different beers and share a drink with one another even if they aren't in the same room. It offers the chance to find friends, interact and review their own drinks.  
+Cheers To Beers is a social media platform where users can show their love of different beers and share a drink with one another even if they aren't in the same room. It offers the chance to find friends, interact and review their own drinks.  
 The deployed site can be found here - [Cheers-API](https://cheers-to-beers-api-5a858b4697bd.herokuapp.com/)  
 
-This API was created in conjuction with the frontend project which can be found here:  
+This API was created in conjunction with the frontend project which can be found here:  
 [Cheers-To-Beers-Live-Site](https://cheers-to-beers-4e5512c864fe.herokuapp.com/)  
 [Cheers-To-Beers-GitHub-Repository](https://github.com/DavidDock/cheers-to-beers)
 
@@ -34,9 +34,9 @@ The goal of this API is provide a backend service to allow the Cheers To Beers f
 
 ## Agile Planning
 
-Agile methodology was used throughout the deveploment for this project and I found it extremly helpful to keep track of my project.
+Agile methodology was used throughout the deveplopment for this project and I found it extremely helpful to keep track of my project.
 
-The project was broken down into Epics and User Stories and the MoSCoW method was used to determine relevent features needed for the scope of this project.
+The project was broken down into Epics and User Stories and the MoSCoW method was used to determine relevant features needed for the scope of this project.
 
 Issues were created in GitHub for each Epic and User Story with Tasks to complete and MoSCoW labels on each one. A Kanban board was also created to keep track of these Issues. A Milestone for the MVP was also created and linked to relevant Issues.
 
@@ -158,7 +158,7 @@ Comments can be filtered by what post they are on.
 * Contact List - Allows admin to view and delete all contact messages from the front-end.
 * Create Review - Allows users to create and delete a review for other users posts/drinks. This will create an average user rating which can be seen in the post detail. 
 
-Further future implentations:
+Further future implementations:
 * For the profile and posts model it would be better to resize the images upon upload to speed up frontend performance.
 * For each cheers/star/comment give post owner a notification.
 * Show post owner a list of users who gave cheer/star.
@@ -172,7 +172,7 @@ Further future implentations:
 * Django - Framework to build the app.
 * Django REST framework - Toolkit for building the API
 
-### Libaries, Python Packages and Programes Used
+### Libraries, Python Packages and Programs Used
 * Pillow - To process the image.
 * Cloudinary - Used to store and serve images.
 * Django filter - Used to filter API results.
@@ -181,13 +181,13 @@ Further future implentations:
 * dj database url - Used for the DATABASE_URL connection settings.
 * Psycopg2 - Allows deployed application to perform CRUD on the db.
 * Gunicorn - Used for deployment of WSGI applications.
-* django cors headers - Used to allow cross origin rescource sharing.
+* django cors headers - Used to allow cross origin resource sharing.
 * Git - Used for version control.
 * GitHub - Used to store the repository and GitHub projects for the Kanban board.
 * GitPod - IDE used to develop the site.
 * ElephantSQL - Used for the database.
 * lucid - To create model diagrams.
-* Google Sheets - To create uer story and testing spreadsheet.
+* Google Sheets - To create user story and testing spreadsheet.
 * Tiny PNG - Used to re-size image file.
 * Heroku - Used for hosting the site.
 
@@ -200,7 +200,7 @@ Further testing was completed as part of the front-end development by testing th
 [CI Python Linter](https://pep8ci.herokuapp.com/) was used to test the python code.  
 
 The validation was completed on all python files written for this site.  
-Settings.py contains important data which is longer than 79 lines and can not be ajusted.  
+Settings.py contains important data which is longer than 79 lines and can not be adjusted.  
 After removing some whitespace and adding blank lines all files passed validation.  
 
 
@@ -263,7 +263,7 @@ As a developer display each post in api with ability to edit and delete
  * Can delete own post in api
 
 ##### Results
-A single post can be correctly viewed in /posts/int:pk/ API view and only the owner of the post can successfully update or destory the post in the view.
+A single post can be correctly viewed in /posts/int:pk/ API view and only the owner of the post can successfully update or destroy the post in the view.
 
 #### Create Comment-drf 
 As a developer I can create comment and view in admin
@@ -293,7 +293,7 @@ As a developer display each comment in api with ability to edit and delete
 * Can delete own comment in api
 
 ##### Results
-A single comment can be correctly viewed in /comments/int:pk/ API view and only the owner of the comment can successfully update or destory the comment in the view.
+A single comment can be correctly viewed in /comments/int:pk/ API view and only the owner of the comment can successfully update or destroy the comment in the view.
 
 #### Create Star-drf
 As a developer I can create star and view in admin 
@@ -322,7 +322,7 @@ As a developer display each star in api with ability to delete.
 * Can delete own star in api
 
 ##### Results
-A single star can be correctly viewed in /stars/int:pk/ API view and only the owner of the star can successfully destory the star in the view.
+A single star can be correctly viewed in /stars/int:pk/ API view and only the owner of the star can successfully destroy the star in the view.
 
 #### Create Cheer-drf
 As a developer I can create cheer and view in admin 
@@ -351,7 +351,7 @@ As a developer display each cheer in api with ability to delete.
 * Can delete own cheer in api
 
 ##### Results
-A single cheer can be correctly viewed in /cheers/int:pk/ API view and only the owner of the cheer can successfully destory the cheer in the view.
+A single cheer can be correctly viewed in /cheers/int:pk/ API view and only the owner of the cheer can successfully destroy the cheer in the view.
 
 #### Create Follower-drf
 As a developer I can create a follower and view in admin.  
@@ -380,7 +380,7 @@ As a developer display each follower in api with ability to delete
  * Can delete own follower in api.
 
 ##### Results
-A single follower can be correctly viewed in /followers/int:pk/ API view and only the follower owner can successfully destory it in the view.
+A single follower can be correctly viewed in /followers/int:pk/ API view and only the follower owner can successfully destroy it in the view.
 
 #### Set following in profile-drf
 As a developer display if user is following another user in api to determine who they follow 
@@ -417,7 +417,7 @@ As a developer display extra fields and order filters to determine how active th
 * Can see order filters in api.
 
 ##### Results
-You can succesfully see the additional fields in each profile.
+You can successfully see the additional fields in each profile.
 
 #### Add fields and order filters to posts-drf
 As a developer display extra fields and order filters to the posts and provide api with more fields/filters to use.
@@ -463,7 +463,7 @@ As a developer display all comments for a post in api if filter is used
  *  Can filter all comments for each post.
 
 ##### Results
-You can successfully filter the comments for each post in the commentslist view.
+You can successfully filter the comments for each post in the comments list view.
 
 #### Create About-drf
 As a developer I can create about and view in admin.
@@ -499,7 +499,7 @@ As a developer allow user to create contact through api
 * Can see contacts made in admin.
 
 ##### Results
-A contact can successfully be created by a user in the contactcreate view, /contact url, and be seen in the admin panel.
+A contact can successfully be created by a user in the contact create view, /contact url, and be seen in the admin panel.
 
 ### Manual Testing
 ![Manual-Testing](/documentation/manual-testing-cheers-api.png)
@@ -521,7 +521,7 @@ This site was deployed using Heroku via GitHub and developed using gitpod. The f
   - A Procfile added with web: gunicorn project_name(cheers_api).wsgi
   - Debug set to only true in development mode
   - All migrations are made to external db.
-  - All changes commited and pushed to GitHub where the repository is stored  
+  - All changes committed and pushed to GitHub where the repository is stored  
 
 - Log in to Heroku and create App with unique name
 - Add following convig Vars to new App:
@@ -532,7 +532,7 @@ This site was deployed using Heroku via GitHub and developed using gitpod. The f
   - CLIENT_ORIGIN with the deployed frontend url
   - CLIENT_ORIGIN_DEV with the development url
 - Click on deploy and choose GitHub and link to the repository [Cheers-API-GitHub-Repository](https://github.com/DavidDock/cheers-api)
-- Click on deply branch
+- Click on deploy branch
 - Open App
 
 Visit the deployed API: [Cheers-API](https://cheers-to-beers-api-5a858b4697bd.herokuapp.com/)  
@@ -551,4 +551,4 @@ Visit the deployed API: [Cheers-API](https://cheers-to-beers-api-5a858b4697bd.he
 ## Credits
 
 ### Learning
-The code used for this project was taught to me by code insitute. The Code Insitutes project run throughs 'Django Rest Framework' and 'Moments' helped me greatly with the development of my project.
+The code used for this project was taught to me by code institute. The Code Institutes project run throughs 'Django Rest Framework' and 'Moments' helped me greatly with the development of my project.
